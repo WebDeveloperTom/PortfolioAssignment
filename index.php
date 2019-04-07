@@ -51,12 +51,55 @@
         <!-- projects -->
         </div>
         <div class="project-list">
-          <div class="panel">Panel A</div>
-          <div class="panel">Panel B</div>
-          <div class="panel">Panel C</div>
-          <div class="panel">Panel D</div>
-          <div class="panel">Panel E</div>
-          <div class="panel">Panel F</div>
+          <div class="panel">
+            <a href="#project1">
+              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Project 1 description</p>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="#project1">
+              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Project 1 description</p>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="#project1">
+              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Project 1 description</p>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="#project1">
+              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Project 1 description</p>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="#project1">
+              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Project 1 description</p>
+            </div>
+          </div>
+          <div class="panel">
+            <a href="#project1">
+              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Project 1 description</p>
+            </div>
+          </div>
+
         </div>
         <div class="help">
           <h2>Let me help you get in front of the world.</h2>
