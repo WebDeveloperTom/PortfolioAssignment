@@ -64,7 +64,7 @@
               <img class="project-img" src="https://via.placeholder.com/150" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 1 description</p>
+              <p class="panel-description">Project 2 description</p>
             </div>
           </div>
           <div class="panel">
@@ -72,7 +72,7 @@
               <img class="project-img" src="https://via.placeholder.com/150" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 1 description</p>
+              <p class="panel-description">Project 3 description</p>
             </div>
           </div>
           <div class="panel">
@@ -80,7 +80,7 @@
               <img class="project-img" src="https://via.placeholder.com/150" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 1 description</p>
+              <p class="panel-description">Project 4 description</p>
             </div>
           </div>
           <div class="panel">
@@ -88,7 +88,7 @@
               <img class="project-img" src="https://via.placeholder.com/150" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 1 description</p>
+              <p class="panel-description">Project 5 description</p>
             </div>
           </div>
           <div class="panel">
@@ -96,7 +96,7 @@
               <img class="project-img" src="https://via.placeholder.com/150" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 1 description</p>
+              <p class="panel-description">Project 6 description</p>
             </div>
           </div>
 
