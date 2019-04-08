@@ -4,6 +4,10 @@ body {
   height: 100vh;
 }
 
+<<<<<<< HEAD
+=======
+/* intro/name section */
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .intro {
   height: 100vh;
   display: flex;
@@ -15,21 +19,38 @@ body {
   margin-top: 100px;
   animation: 1s slidefade 0.5s forwards;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .intro h1 {
   font-size: 5em;
   margin: 0;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 .intro h2 {
   margin-bottom: 5px;
 }
 .intro h4 {
   margin-top: 0;
 }
+=======
+
+.intro h2 {
+  margin-bottom: 5px;
+}
+
+.intro h4 {
+  margin-top: 0;
+}
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .intro .icons a {
   color: inherit;
   margin: 5px;
 }
+<<<<<<< HEAD
 .intro .icons a i.fa-twitter:hover {
   color: #1da1f2;
 }
@@ -39,12 +60,31 @@ body {
 .intro .icons a i.fa-github:hover {
   color: #bd2c00;
 }
+=======
+
+.intro .icons a i.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.intro .icons a i.fa-linkedin:hover {
+  color: #8d6cab;
+}
+
+.intro .icons a i.fa-github:hover {
+  color: #bd2c00;
+}
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 /*animations*/
 @-webkit-keyframes fadein {
   100% {
     opacity: 1;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 @keyframes fadein {
   100% {
     opacity: 1;
@@ -65,6 +105,11 @@ body {
   }
 }
 
+<<<<<<< HEAD
+=======
+/* end intro/name section */
+/* start project list section */
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .project-list {
   display: grid;
   margin: 0 auto;
@@ -72,8 +117,13 @@ body {
   align-items: stretch;
   justify-items: center;
 }
+<<<<<<< HEAD
 .project-img {
 }
+=======
+
+.project-img {}
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 
 a img {
   position: absolute;
@@ -81,11 +131,19 @@ a img {
   left: 35%;
   display: block;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .panel {
   position: relative;
   min-height: 270px;
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .overlay {
   position: absolute;
   bottom: 0;
@@ -97,6 +155,10 @@ a img {
   height: 0;
   transition: 0.2s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .panel:hover .overlay {
   height: 15%;
 }
@@ -119,12 +181,21 @@ a img {
     grid-template-columns: 1fr 1fr;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 @media only screen and (max-width: 580px) {
   .project-list {
     grid-template-columns: 1fr;
   }
 }
 
+<<<<<<< HEAD
+=======
+/* end project list section */
+/* start help section */
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .help {
   padding: 20px;
   min-height: 350px;
@@ -132,10 +203,19 @@ a img {
   background-color: #f9f9f9;
 }
 
+<<<<<<< HEAD
 .help > h4 {
   margin-bottom: 0;
   padding-bottom: 0.5rem;
 }
+=======
+.help>h4 {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* end help section */
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
 .block {
   height: 50px;
 }
@@ -166,6 +246,7 @@ footer .footer-icons i {
   margin: 10px;
   color: #fff;
 }
+<<<<<<< HEAD
 footer .footer-icons i.fa-twitter:hover {
   color: #1da1f2;
 }
@@ -175,3 +256,17 @@ footer .footer-icons i.fa-linkedin:hover {
 footer .footer-icons i.fa-github:hover {
   color: #bd2c00;
 }
+=======
+
+footer .footer-icons i.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+footer .footer-icons i.fa-linkedin:hover {
+  color: #8d6cab;
+}
+
+footer .footer-icons i.fa-github:hover {
+  color: #bd2c00;
+}
+>>>>>>> f25e80d7f523338a697797c6e1a2eb251d5690e8
