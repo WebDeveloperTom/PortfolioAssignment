@@ -13,17 +13,17 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">WebDevTom</a>
+        <a class="navbar-brand" href="/">WebDevTom</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-mobile" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="nav-mobile">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><h4>Projects</h4> </a>
+            <li class="nav-item">
+              <a class="nav-link" href="/#projects"><h4>Projects</h4> </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><h4>About</h4></a>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutme"><h4>About</h4></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#"><h4>Contact</h4></a>
@@ -91,7 +91,64 @@
                           </div>
                       </div>
                   </form>
+
                 </div>
+
+            </div>
+            <div class="row d-flex justify-content-center">
+              <?php if (!isset($_GET['query'])) {
+
+              } else {
+                $queryCheck = $_GET['query'];
+                if ($queryCheck == 'sent') {
+                  echo "
+                    <div class='alert alert-success alert-dismissible fade show text-center' role='alert' style='width: 40%;'>
+                      <p>Sent! Someone will be in touch soon!</p>
+                      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </button>
+                    </div>
+                    ";
+                  } elseif ($queryCheck == 'empty') {
+                    echo "
+                    <div class='alert alert-danger alert-dismissible fade show text-center' role='alert' style='width: 40%;'>
+                      <p>Make sure you fill out all the fields!</p>
+                      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </button>
+                    </div>
+                    ";
+                  }elseif ($queryCheck == 'invalidchar') {
+                    echo "
+                    <div class='alert alert-danger alert-dismissible fade show text-center' role='alert' style='width: 40%;'>
+                      <p>Make sure you use a valid name or subject!</p>
+                      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </button>
+                    </div>
+                    ";
+                  }
+                  elseif ($queryCheck == 'invalidnum') {
+                    echo "
+                    <div class='alert alert-danger alert-dismissible fade show text-center' role='alert' style='width: 40%;'>
+                      <p>Please use a proper phone number!</p>
+                      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </button>
+                    </div>
+                    ";
+                  } elseif ($queryCheck == 'invalidemail') {
+                    echo "
+                    <div class='alert alert-danger alert-dismissible fade show text-center' role='alert' style='width: 40%;'>
+                      <p>Make sure you use a valid email!</p>
+                      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </button>
+                    </div>
+                    ";
+                  }
+                }
+              ?>
             </div>
         </div>
       </main>

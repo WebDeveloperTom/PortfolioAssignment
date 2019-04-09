@@ -10,26 +10,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //error handling
     //check if inputs are empty
     if (empty($name) || empty($phone) || empty($subject) || empty($mailFrom) || empty($message)){
-      header("Location: ../contact?query=empty&name=$name&phone=$phone&subject=$subject&message=$message");
+      header("Location: /contact?query=empty&name=$name&phone=$phone&subject=$subject&message=$message");
       exit();
     } else {
       //Check if name is valid
       if(!preg_match("/^[a-zA-Z\s]*$/", $name)){
-        header("Location: ../contact?query=invalidchar");
+        header("Location: /contact?query=invalidchar");
         exit();
       } else {
         //check if phone numbe is a number
           if(!is_numeric($phone)){
-            header("Location: ../contact?query=invalidemail&name=$name&subject=$subject&message=$message");
+            header("Location: /contact?query=invalidnum&name=$name&subject=$subject&message=$message");
             exit();
         } else {
           //check if email is an email
           if (!filter_var($mailFrom, FILTER_VALIDATE_EMAIL)){
-            header("Location: ../contact?query=invalidemail&name=$name&phone=$phone&subject=$subject&message=$message");
+            header("Location: /contact?query=invalidemail&name=$name&phone=$phone&subject=$subject&message=$message");
             exit();
           } else {
             if(!preg_match("/^[a-zA-Z\s]*$/", $subject)){
-              header("Location: ../contact?query=invalidchar");
+              header("Location: /contact?query=invalidchar");
               exit();
           } else {
 
@@ -42,13 +42,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // form_data is the table name
             $sql = "INSERT INTO dotdevcontact (name, phone, mailFrom, subject, message) VALUES ('$name', '$phone', '$mailFrom', '$subject', '$message');";
             mysqli_query($conn, $sql);
-            header("Location: ../contact?query=sent");
+            header("Location: /contact?query=sent");
           }
         }
       }
     }
   }
 } else {
-  header("Location: ../contact?query=error");
+  header("Location: /contact?query=error");
 }
 ?>

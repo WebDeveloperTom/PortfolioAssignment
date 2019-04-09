@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Tom Powell</title>
-    <link rel="stylesheet" href="../styles\styles.css">
-    <link rel="stylesheet" href="../styles\aboutmestyles.css">
+    <link rel="stylesheet" href="../../styles\styles.css">
+    <link rel="stylesheet" href="../../styles\project.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,14 +18,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-mobile" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="nav-mobile">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="/#projects"><h4>Projects</h4> </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><h4>About</h4></a>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutme"><h4>About</h4></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact"><h4>Contact</h4></a>
@@ -35,32 +34,31 @@
         </div>
       </nav>
     </header>
-    <div class="aboutme-title">
-      <h3>About Tom</h3>
-      <h5>Top notch websites at an affordable price.</h5>
+    <div class="project-title">
+      <h3>Real Estate Site</h3>
+      <h5>HTML / CSS / Bootstrap / PHP / SQL</h5>
     </div>
       <main>
-
-        <div class="aboutme-main">
-          <div class="photo">
-            <img src="../assests\Small Tom Powell.jpg" alt="">
+        <div class="project-main">
+          <div class="project-photo1">
+            <img src="../../assests/realestatehome.jpg" alt="">
           </div>
-
-          <p>I am a front-end web developer with over 12 years in customer service.
-            I specialise in creating simple but beautiful and responsive front-end expierences.</p>
-
-            <p>I have been studying web development for the past 3 years and have become profient in:</p>
-            <ul>
-              <li>Responsive HTML/CSS</li>
-              <li>JavaScript (vanilla, jQuery, React)</li>
-              <li>High-level user experience</li>
-              <li>Professional best practices</li>
-              <li>Git</li>
-              <li>WordPress</li>
-            </ul>
-            <br>
-            <p>Outside of programing, I help my partner run her website, AttackOnGeek.com.</p>
-            <p>You'll also find me streaming games to our community on a regular basis over at Mixer.com/AttackOnGeek.</p>
+          <p>For this project I was tasked with building a Real Estate website that connected to a SQL database. On top of that, the site need to have some form of signup/login functionallity, aswell as an
+          admin panel for adding and editing property listings.</p>
+          <br>
+          <p>To help speed up the design process so I could focus on the functionallity of the site, I used Bootstrap to quickly pull a design together.</p>
+          <div class="project-photo2">
+            <img src="../../assests/realestatesignup.jpg" alt="">
+          </div>
+          <p>After designing the database schema, I first started to work on a signup form. When a user would attemt to sign up to the site, the code would check that the user had entered data into all the fields and that the username they had chosen was not already in the database.</p>
+          <br>
+          <p>The users password would be hashed for security and stored in the database. In the user database, there was a checkbox for whether each user had admin privilages or not. Whenever a user would try to access a restricted part of the site, it would double check the
+          database to see if they had the privilages or not. </p>
+          <div class="project-photo3">
+            <img src="../../assests/realestateadmin.jpg" alt="">
+          </div>
+          <p>This site made lots of use of PHP WHILE loops. This allowed me to build lots of diffent templates once and have them be reused multiple times throughout the site. You can see the same loops being used within the admin panel as well as the main listings. </p>
+          <p style="text-align: center; margin-top: 15px;">You can view the code on my <a href="https://github.com/WebDeveloperTom/PHP-Real-Estate-site">GitHub</a></p>
         </div>
 
 

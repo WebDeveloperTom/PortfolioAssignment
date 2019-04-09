@@ -1,4 +1,4 @@
-.aboutme-title {
+.project-title {
   text-align: center;
   margin-top: 50px;
   color: #fff;
@@ -7,9 +7,10 @@
 
 main {
   background-color: #f9f9f9;
+  padding-bottom: 20px;
 }
 
-.aboutme-main {
+.project-main {
   width: 100%;
   max-width: 720px;
   min-height: 600px;
@@ -19,19 +20,30 @@ main {
   padding-top: 20px;
 }
 
-.aboutme-main > p {
+.project-main > p {
+  /* text-align: center; */
   margin: 0 10px;
 }
 
-.photo {
-  /* float: left; */
+.project-photo1,
+.project-photo2,
+.project-photo3 {
   display: flex;
   justify-content: center;
-  margin-right: 15px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-.photo > img {
-  height: 160px;
+.project-photo1 > img {
+  max-height: 250px;
+  border: solid black 2px;
+}
+
+.project-photo2 > img {
+  max-height: 250px;
+  border: solid black 2px;
+}
+.project-photo3 > img {
+  max-height: 250px;
   border: solid black 2px;
 }

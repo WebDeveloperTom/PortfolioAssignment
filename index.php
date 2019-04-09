@@ -13,7 +13,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">WebDevTom</a>
+        <a class="navbar-brand" href="/">WebDevTom</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-mobile" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="nav-mobile">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#"><h4>Projects</h4> </a>
+              <a class="nav-link" href="#projects"><h4>Projects</h4> </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#"><h4>About</h4></a>
+              <a class="nav-link" href="./aboutme"><h4>About</h4></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="./contact"><h4>Contact</h4></a>
@@ -40,7 +40,6 @@
           <h1 id="name">Tom Powell</h1>
           <h2 id="title">Web Developer</h2>
           <h4 id="location">Auckland, New Zealand</h4>
-          <h4>SITE STILL UNDER CONSTRUCTION</h4>
           <div class="icons">
             <a href="https://twitter.com/WebDeveloperTom" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/tom-powell-046474152/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
@@ -50,56 +49,61 @@
 
         <!-- projects -->
         </div>
+        <div id="projects"></div>
+        <div>
+          <h3 id="worked">Things I've worked on:</h3>
+        </div>
         <div class="project-list">
-          <div class="panel">
-            <a href="#project1">
-              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+          <div class="panel project1">
+            <a href="./projects/discordbot/">
+              <img class="project-img" src="assests\robby.jpg" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 1 description</p>
+              <p class="panel-description">AOG Discord Bot</p>
             </div>
           </div>
-          <div class="panel">
-            <a href="#project1">
-              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+          <div class="panel project2">
+            <a href="./projects/realestatesite/">
+              <img class="project-img" src="assests\real-estate-logo.png" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 2 description</p>
+              <p class="panel-description">Real Estate website</p>
             </div>
           </div>
-          <div class="panel">
-            <a href="#project1">
-              <img class="project-img" src="https://via.placeholder.com/150" alt="">
+          <div class="panel project3">
+            <a href="./projects/jsquiz/">
+              <img class="project-img" src="assests\jsquizlogo.png" alt="">
             </a>
             <div class="overlay">
-              <p class="panel-description">Project 3 description</p>
-            </div>
-          </div>
-          <div class="panel">
-            <a href="#project1">
-              <img class="project-img" src="https://via.placeholder.com/150" alt="">
-            </a>
-            <div class="overlay">
-              <p class="panel-description">Project 4 description</p>
-            </div>
-          </div>
-          <div class="panel">
-            <a href="#project1">
-              <img class="project-img" src="https://via.placeholder.com/150" alt="">
-            </a>
-            <div class="overlay">
-              <p class="panel-description">Project 5 description</p>
-            </div>
-          </div>
-          <div class="panel">
-            <a href="#project1">
-              <img class="project-img" src="https://via.placeholder.com/150" alt="">
-            </a>
-            <div class="overlay">
-              <p class="panel-description">Project 6 description</p>
+              <p class="panel-description">Javascript Quiz</p>
             </div>
           </div>
 
+          <div class="panel project4">
+            <a href="./projects/wpsite/ ">
+              <img class="project-img" src="assests\WordPress-logo.png" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Wordpress Gaming site</p>
+            </div>
+          </div>
+
+          <div class="panel project6">
+            <a href="./projects/luxsolar/">
+              <img class="project-img" src="assests\luxsolar.png" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">Lux Solar Calculator</p>
+            </div>
+          </div>
+          <div class="panel project5">
+            <a href="./projects/nzsite/">
+              <img class="project-img" src="assests\nztourism.jpg" alt="">
+            </a>
+            <div class="overlay">
+              <p class="panel-description">NZ Tourism site</p>
+            </div>
+          </div>
         </div>
         <div class="help">
           <h2>Let me help you get in front of the world.</h2>
